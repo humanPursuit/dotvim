@@ -1,9 +1,28 @@
 " Configuration: Plugins configuration
 
+" [> Colortheme molokai <]
+" original background color
+let g:molokai_original = 1
+let g:rehash256 = 1
+
 " [> NERDTree <]
 " on vim enter opens nerd tree
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+
+function OpenNerdTree() 
+    let s:exclude = ['COMMIT_EDITMSG', 'MERGE_MSG']
+    if index(s:exclude, expand('%:t')) < 0
+        NERDTreeFind
+        " back to editing window
+        exec "normal! \<c-w>\<c-w>"
+    endif
+endfunction
+
+" on vim enter opens nerd tree
+autocmd VimEnter * call OpenNerdTree()
+
+nnoremap <c-n> :NERDTreeToggle<cr>
 
 " nerdtree window size
 let g:NERDTreeWinSize = 35
@@ -16,7 +35,6 @@ let g:NERDTreeShowHidden = 1
 
 " ignored files
 let g:NERDTreeIgnore=['\.swp$', '\~$']
-nnoremap <c-n> :NERDTreeToggle<cr>
 
 " [> NERDCommenter <]
 noremap <c-_> :call NERDComment(0, "Toggle")<cr>
@@ -26,12 +44,14 @@ noremap <c-_> :call NERDComment(0, "Toggle")<cr>
 " status line always opened
 set laststatus=2
 
-" let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
 
 "  powerline font
 let g:airline_powerline_fonts=1
 
-let g:airline_theme='papercolor'
+let g:airline_theme='light'
 
 " [> EditorConfig <]
 
@@ -97,6 +117,3 @@ let g:wildfire_objects = ["i'", 'i"', "i)", "i]", "i}", "i>", "ip"]
 
 " [> 'sjl/gundo.vim' <]
 nnoremap <Leader>ud :GundoToggle<CR>
-
-colorscheme molokai
-

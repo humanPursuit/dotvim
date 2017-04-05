@@ -4,18 +4,17 @@ call plug#begin(g:pluggedDir)
 " colorscheme
 Plug 'altercation/vim-colors-solarized'
 Plug 'tomasr/molokai'
-Plug 'vim-scripts/phd'
+Plug 'goatslacker/mango.vim'
 " status bar
-Plug 'Lokaltog/vim-powerline'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 Plug 'https://github.com/scrooloose/nerdtree.git'
 Plug 'scrooloose/nerdcommenter'
-Plug 'goatslacker/mango.vim'
-Plug 'vim-dist/PaperColor.vim'
+" git wrapper
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+
 Plug 'editorconfig/editorconfig-vim'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'scrooloose/syntastic'
@@ -41,12 +40,11 @@ Plug 'mattn/emmet-vim'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'clones/vim-fuzzyfinder'
 Plug 'vim-scripts/L9'
-Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'jbgutierrez/vim-babel'
 Plug 'kshenoy/vim-signature'
 Plug 'gcmt/wildfire.vim'
-" Plug 'lilydjwg/fcitx.vim'
 Plug 'cakebaker/scss-syntax.vim'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 

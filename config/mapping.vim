@@ -30,12 +30,13 @@ onoremap in( :<c-u>normal! f(vi(<cr>
 onoremap in{ :<c-u>normal! f{vi{<cr>
 " select inside brackets
 onoremap in[ :<c-u>normal! f[vi[<cr>
+
 " hardcode mode
-" leave insermode(like <esc>) and disable <esc>
+" leave insermode (like <esc>) and disable <esc>
 inoremap jk <esc>
 inoremap <esc> <nop>
 nnoremap <up> <nop>
-nnoremap <down> <nop
+nnoremap <down> <nop>
 nnoremap <left> <nop>
 nnoremap <right> <nop>
 
@@ -54,7 +55,7 @@ nmap <leader>p "+p
 
 nnoremap <leader>q :q<CR>
 nnoremap <leader>w :w<CR>
-nnoremap <leaderWQ :wa<CR>:q<CR>
+nnoremap <leader>WQ :wa<CR>:q<CR>
 nnoremap <leader>Q :qa!<CR>
 
 " map to forEach windows

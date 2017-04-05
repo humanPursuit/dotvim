@@ -1,11 +1,11 @@
-" set runtimepath in windows
+" guifont
 if has('win32') || has('win64')
-    set rtp+=~/.vim
+    set guifont=DejaVu\ Sans\ Mono:h10
+elseif has('mac')
+    set guifont=Source\ Code\ Pro\ for\ Powerline:h16
 endif
 
-" guifont
-set guifont=DejaVu\ Sans\ Mono:h10
-" set guifont=Source\ Code\ Pro\ for\ Powerline:h16
+
 " set guifont=Liberation\ Mono\ for\ Powerline\ 10
 
 " Configuration: global settings
@@ -19,22 +19,24 @@ set noswapfile nobackup
 
 set encoding=utf-8
 
-" show line numbers
-set number
-
-" blink cursor blink
+" cursor
 set gcr=a:block-blinkon0
 
-" always show status line
-set laststatus=2
-" highlight current line and column
+" show line numbers
+set number
+" ruler
 set ruler
-set cursorline cursorcolumn
+" highlight current line
+set cursorline
+" highlight current column
+" set cursorcolumn
 
 " syntax highlighting
 syntax on
 set t_Co=256
 set background=dark
+" colorscheme mango
+colorscheme molokai
 
 " indent
 set smartindent
@@ -53,6 +55,9 @@ set smartcase
 set hlsearch
 set incsearch
 
+" mouse
+set mouse=""
+
 " copy/paste
 " set paste
 " cross-platform setting ref: http://stackoverflow.com/questions/30691466/what-is-difference-between-vims-clipboard-unnamed-and-unnamedplus-settings
@@ -61,8 +66,6 @@ set clipboard^=unnamed,unnamedplus
 " folding mode
 " set foldmethod=manual
 set foldmethod=syntax
-
-
 
 " Configuration for GUI
 if has('gui_running')
