@@ -18,7 +18,7 @@ set shortmess=atI
 set noswapfile nobackup
 
 set encoding=utf-8
-
+set fileformat=unix
 " cursor
 set gcr=a:block-blinkon0
 
