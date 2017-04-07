@@ -22,6 +22,8 @@ set fileformat=unix
 " cursor
 set gcr=a:block-blinkon0
 
+hi Normal ctermfg=252 ctermbg=none
+
 " show line numbers
 set number
 " ruler
@@ -35,8 +37,7 @@ set cursorline
 syntax on
 set t_Co=256
 set background=dark
-" colorscheme mango
-colorscheme molokai
+colorscheme onehalfdark
 
 " indent
 set smartindent
@@ -77,4 +78,6 @@ if has('gui_running')
     " remove menu and tool bar
     set guioptions-=m
     set guioptions-=T
+	" fullScreen when start up
+	autocmd VimEnter * simalt ~x
 endif

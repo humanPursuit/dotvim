@@ -2,12 +2,12 @@
 call plug#begin(g:pluggedDir)
 
 " colorscheme
-Plug 'altercation/vim-colors-solarized'
-Plug 'tomasr/molokai'
-Plug 'goatslacker/mango.vim'
+" Plug 'altercation/vim-colors-solarized'
+" Plug 'tomasr/molokai'
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
 " status bar
 Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-airline/vim-airline-themes'
 
 Plug 'https://github.com/scrooloose/nerdtree.git'
 Plug 'scrooloose/nerdcommenter'

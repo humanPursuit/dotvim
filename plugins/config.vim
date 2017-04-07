@@ -51,7 +51,7 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 "  powerline font, disable, don't want to install extra fonts'
 " let g:airline_powerline_fonts=1
 
-let g:airline_theme='light'
+let g:airline_theme='onehalfdark'
 
 " [> EditorConfig <]
 
@@ -62,6 +62,10 @@ let g:config_Beautifier['js'] = {}
 let g:config_Beautifier['js'].indent_size = '2'
 
 " [> EasyAlign <]
+
+vnoremap ga <Plug>(EasyAlign)
+
+nnoremap ga <Plug>(EasyAlign)
 
 " select paragraph and start easyalign on the left
 nnoremap <leader>a vip<Plug>(EasyAlign)<cr>

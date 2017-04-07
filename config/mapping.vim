@@ -66,4 +66,3 @@ nnoremap <leader>kw <c-w>l " top window
 nnoremap <leader>jw <c-w>l " bottom window
 
 nnoremap <leader>M % " 结对符跳转
-
