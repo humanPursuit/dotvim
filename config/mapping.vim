@@ -65,4 +65,5 @@ nnoremap <leader>hw <c-w>h " left window
 nnoremap <leader>kw <c-w>l " top window
 nnoremap <leader>jw <c-w>l " bottom window
 
-nnoremap <leader>M % " 结对符跳转
+" 结对符跳转
+nnoremap <leader>M % 

@@ -37,7 +37,8 @@ set cursorline
 syntax on
 set t_Co=256
 set background=dark
-colorscheme onehalfdark
+" colorscheme onehalfdark
+colorscheme srcery
 
 " indent
 set smartindent
@@ -63,6 +64,11 @@ set mouse=""
 " set paste
 " cross-platform setting ref: http://stackoverflow.com/questions/30691466/what-is-difference-between-vims-clipboard-unnamed-and-unnamedplus-settings
 set clipboard^=unnamed,unnamedplus
+
+
+" show hidden chars
+set list
+set listchars=tab:»·,eol:¬,trail:·
 
 " folding mode
 " set foldmethod=manual

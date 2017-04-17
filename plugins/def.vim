@@ -5,6 +5,7 @@ call plug#begin(g:pluggedDir)
 " Plug 'altercation/vim-colors-solarized'
 " Plug 'tomasr/molokai'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
+Plug 'roosta/srcery'
 " status bar
 Plug 'vim-airline/vim-airline'
 " Plug 'vim-airline/vim-airline-themes'

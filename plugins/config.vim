@@ -56,10 +56,8 @@ let g:airline_theme='onehalfdark'
 " [> EditorConfig <]
 
 " to avoid issues with fugitive
-" let g:EditorConfig_exclude_patterns = ['fugitive://.*']
+let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*', '\.git']
 let g:config_Beautifier = {}
-let g:config_Beautifier['js'] = {}
-let g:config_Beautifier['js'].indent_size = '2'
 
 " [> EasyAlign <]
 
