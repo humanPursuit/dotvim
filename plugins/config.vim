@@ -20,7 +20,7 @@ function OpenNerdTree()
 endfunction
 
 " on vim enter opens nerd tree
-autocmd VimEnter * call OpenNerdTree()
+" autocmd VimEnter * call OpenNerdTree()
 
 nnoremap <c-n> :NERDTreeToggle<cr>
 
