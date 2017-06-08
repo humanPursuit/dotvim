@@ -73,6 +73,7 @@ set listchars=tab:»·,eol:¬,trail:·
 " folding mode
 " set foldmethod=manual
 set foldmethod=syntax
+autocmd Syntax c,cpp,vim,xml.html,xhtml,perl,gitcommit normal zR
 
 " Configuration for GUI
 if has('gui_running')
