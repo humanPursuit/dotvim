@@ -86,5 +86,9 @@ if has('gui_running')
     set guioptions-=m
     set guioptions-=T
 	" fullScreen when start up
+    if has('win32')
 	autocmd VimEnter * simalt ~x
+    elseif has('mac')
+        set fullscreen
+    endif
 endif
