@@ -48,5 +48,7 @@ Plug 'gcmt/wildfire.vim'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'tpope/vim-fugitive'
 
+Plug 'tpope/vim-commentary'
+
 call plug#end()
 

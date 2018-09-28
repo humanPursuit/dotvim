@@ -34,16 +34,11 @@ onoremap in[ :<c-u>normal! f[vi[<cr>
 " hardcode mode
 " leave insermode (like <esc>) and disable <esc>
 inoremap jk <esc>
-inoremap <esc> <nop>
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
+inoremap <esc> <Nop>
+nnoremap <up> <Nop>
+nnoremap <down> <Nop>
+nnoremap <left> <Nop>
+nnoremap <right> <Nop>
 
 " cursor move line start and end
 nnoremap LB 0
