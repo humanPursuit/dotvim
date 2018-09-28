@@ -85,9 +85,9 @@ if has('gui_running')
     " remove menu and tool bar
     set guioptions-=m
     set guioptions-=T
-	" fullScreen when start up
+        " fullScreen when start up
     if has('win32')
-	autocmd VimEnter * simalt ~x
+        autocmd VimEnter * simalt ~x
     elseif has('mac')
         set fullscreen
     endif
