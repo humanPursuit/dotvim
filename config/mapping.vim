@@ -45,6 +45,7 @@ inoremap <Down> <Nop>
 inoremap <Left> <Nop>
 inoremap <Right> <Nop>
 
+" https://vi.stackexchange.com/questions/15324/up-arrow-key-code-why-a-becomes-oa
 if &term[:4] == "xterm" || &term[:5] == 'screen' || &term[:3] == 'rxvt'
     inoremap <silent> <C-[>OA <Nop>
     inoremap <silent> <C-[>OB <Nop>
