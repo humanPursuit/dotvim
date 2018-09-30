@@ -35,10 +35,22 @@ onoremap in[ :<c-u>normal! f[vi[<cr>
 " leave insermode (like <esc>) and disable <esc>
 inoremap jk <esc>
 inoremap <esc> <Nop>
-nnoremap <up> <Nop>
-nnoremap <down> <Nop>
-nnoremap <left> <Nop>
-nnoremap <right> <Nop>
+nnoremap <Up> <Nop>
+nnoremap <Down> <Nop>
+nnoremap <Left> <Nop>
+nnoremap <Right> <Nop>
+
+inoremap <Up> <Nop>
+inoremap <Down> <Nop>
+inoremap <Left> <Nop>
+inoremap <Right> <Nop>
+
+if &term[:4] == "xterm" || &term[:5] == 'screen' || &term[:3] == 'rxvt'
+    inoremap <silent> <C-[>OA <Nop>
+    inoremap <silent> <C-[>OB <Nop>
+    inoremap <silent> <C-[>OC <Nop>
+    inoremap <silent> <C-[>OD <Nop>
+endif
 
 " cursor move line start and end
 nnoremap LB 0
